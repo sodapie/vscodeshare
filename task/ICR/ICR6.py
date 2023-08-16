@@ -13,6 +13,7 @@ from sklearn.metrics import log_loss
 from lightgbm import LGBMClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import StratifiedKFold
+###変化を加えたい
 
 # データ準備
 file_path = '/Users/kaguy/.vscode/task/ICR/train.csv'
