@@ -13,7 +13,7 @@ from sklearn.metrics import log_loss
 from lightgbm import LGBMClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import StratifiedKFold
-###変化を加えたい
+###変化を加えたい###
 
 # データ準備
 file_path = '/Users/kaguy/.vscode/task/ICR/train.csv'
@@ -83,8 +83,3 @@ for tr_idx, va_idx in kf.split(train_x, train_y):
 print(np.mean(scores))
 
 pred = np.array([model.predict(test_x) for model in models])
-
-pred = np.mean(pred, axis=0)
-
-#Kfold 0.267417
-#StratifiedKfold 0.216
