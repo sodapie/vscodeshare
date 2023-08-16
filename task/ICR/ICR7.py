@@ -97,3 +97,4 @@ model1 = lgb.Booster(model_file='ICRmodel1.txt')
 # CSVファイルとして保存
 submission_df.to_csv("submission.csv", index=False)
 
+#変更したい
